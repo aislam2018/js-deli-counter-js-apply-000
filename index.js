@@ -27,7 +27,7 @@ function currentLine(katzDeliLine) {
     var person = katzDeliLine[i];
     var position = i + 1;
     var onLine = position + '. ' + person;
-    console.log(onLine);
+    console.log(online)
    }
   }
 }
