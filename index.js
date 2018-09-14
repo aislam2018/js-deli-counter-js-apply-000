@@ -22,12 +22,18 @@ function currentLine(katzDeliLine) {
   if (katzDeliLine[0] === undefined) {
     return 'The line is currently empty.'
   } else {
-  console.log( 'The Line is currently:')
-  for (var i = 0; i < katzDeliLine.length; i++) {
+    var arr = [];
+    var str = 'The Line is currently: '
+    for (var i = 0; i < katzDeliLine.length; i++) {
     var person = katzDeliLine[i];
     var position = i + 1;
     var onLine = position + '. ' + person;
-    console.log(online)
+    if (person !== katzDeliLine[katzDeliLine.length - 1]) {
+      arr.push(onLine + ',');
+    } else {
+      arr.push(onLine);
+    }
    }
+   return str += arr.join(' ');
   }
 }
