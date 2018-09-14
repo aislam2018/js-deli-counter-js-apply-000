@@ -13,7 +13,7 @@ function nowServing(katzDeliLine) {
   if (katzDeliLine[0] === undefined) {
     return 'There is nobody waiting to be served!'
   } else {
-    var personServed = katzDeliLine[0];
+    var personServed = katzDeliLine.splice(0, 1);
     return 'Currently serving ' + personServed + '.';
   }
 }
