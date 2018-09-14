@@ -1,10 +1,10 @@
-var katzDeliLine = [];
 function takeANumber(katzDeliLine, name) {
-  ketzDeliLine.push(name);
-  for (var i = 0; i < ketzDeliLine.length; i++) {
-    var person = ketzDeliLine[i];
+  var katzDeliLine = [];
+  katzDeliLine.push(name);
+  for (var i = 0; i < katzDeliLine.length; i++) {
+    var person = katzDeliLine[i];
     var position = i + 1;
-    var greeting = 'Welcome, ' + person + '.' 
+    var greeting = 'Welcome, ' + person + '.'
                     + ' You are number ' + position + ' in line.'
   }
   return greeting;
