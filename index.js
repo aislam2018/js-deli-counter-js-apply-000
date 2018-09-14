@@ -22,7 +22,7 @@ function currentLine(katzDeliLine) {
   if (katzDeliLine[0] === undefined) {
     return 'The line is currently empty.'
   } else {
-  var str = 'The Line is currently: '
+  console.log( 'The Line is currently:')
   for (var i = 0; i < katzDeliLine.length; i++) {
     var person = katzDeliLine[i];
     var position = i + 1;
