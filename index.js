@@ -23,7 +23,7 @@ function currentLine(katzDeliLine) {
     return 'The line is currently empty.'
   } else {
     var arr = [];
-    var str = 'The Line is currently: '
+    var str = 'The line is currently: '
     for (var i = 0; i < katzDeliLine.length; i++) {
     var person = katzDeliLine[i];
     var position = i + 1;
