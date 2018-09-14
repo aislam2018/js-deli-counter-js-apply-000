@@ -19,12 +19,15 @@ function nowServing(katzDeliLine) {
 }
 
 function currentLine(katzDeliLine) {
-  var newLine = katzDeliLine.splice(1);
+  if (katzDeliLine[0] === undefined) {
+    return 'The line is currently empty.'
+  } else {
   console.log('The Line is currently:')
-  for (var i = 0; i < newLine.length; i++) {
-    var person = newLine[i];
+  for (var i = 0; i < katzDeliLine.length; i++) {
+    var person = katzDeliLine[i];
     var position = i + 1;
     var onLine = position + '. ' + person;
     console.log(onLine);
+   }
   }
 }
